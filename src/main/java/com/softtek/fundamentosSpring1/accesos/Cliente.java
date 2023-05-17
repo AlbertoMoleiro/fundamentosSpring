@@ -1,4 +1,4 @@
-package interfaces.ejemplo4.model;
+package com.softtek.fundamentosSpring1.accesos;
 
 public class Cliente {
     private String nombre;

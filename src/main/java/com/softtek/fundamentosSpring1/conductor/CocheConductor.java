@@ -1,9 +1,15 @@
-package interfaces.ejemplo2.model;
+package com.softtek.fundamentosSpring1.conductor;
 
-public class Coche implements IVehiculo{
+import org.springframework.stereotype.Component;
+
+@Component
+public class CocheConductor implements IVehiculo{
+
     private int deposito;
+    public CocheConductor(){
 
-    public Coche(int deposito){
+    }
+    public CocheConductor(int deposito){
         this.deposito = deposito;
     }
     @Override
@@ -14,5 +20,13 @@ public class Coche implements IVehiculo{
         }else {
             return "No me muevo";
         }
+    }
+
+    public int getDeposito() {
+        return deposito;
+    }
+
+    public void setDeposito(int deposito) {
+        this.deposito = deposito;
     }
 }

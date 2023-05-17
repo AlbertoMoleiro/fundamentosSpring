@@ -1,4 +1,4 @@
-package com.softtek.fundamentosSpring1.model;
+package com.softtek.fundamentosSpring1.modelSeguros;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,7 +15,9 @@ public class SeguroCoche {
 
     private String aseguradora;
 
-    public SeguroCoche(@Qualifier("tallerPintura") ITaller taller){
+    public SeguroCoche(){}
+    public SeguroCoche(@Qualifier("tallerPintura") ITaller taller,String aseguradora){
+        this.aseguradora = aseguradora;
         this.taller = taller;
     }
 
